@@ -7,19 +7,24 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Шифрование текста</h1>
-      <input type="text" id="textInput" placeholder="Введи что зашифровать" />
-      <button id="encryptBtn">Encrypt</button>
-      <p id="encryptedTextPara"></p>
-      <input
-        type="text"
-        id="encryptedTextInput"
-        placeholder="Введи что рассшифровать"
-      />
-      <button id="decryptBtn">Decrypt</button>
-      <p id="decryptedTextPara"></p>
-    </div>
+    <h1>Вход</h1>
+<form id="loginForm">
+    <input type="text" id="username" placeholder="Логин">
+    <button type="submit">Войти</button>
+</form>
+<div class="container" style="display: none;">
+  <h1>Шифрование текста</h1>
+  <input type="text" id="textInput" placeholder="Введи что зашифровать" />
+  <button id="encryptBtn">Encrypt</button>
+  <p id="encryptedTextPara"></p>
+  <input
+    type="text"
+    id="encryptedTextInput"
+    placeholder="Введи что рассшифровать"
+  />
+  <button id="decryptBtn">Decrypt</button>
+  <p id="decryptedTextPara"></p>
+</div>
     <script src="./script/index.js">
     </script>
   </body>
