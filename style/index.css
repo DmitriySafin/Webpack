@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(246, 211, 152);
+  }
+  .container {
+    inline-size: 50%;
+    margin: 0 auto;
+  }
+
+  #textInput,
+  #encryptedTextInput {
+    padding: 10px;
+    inline-size: 70%;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: transparent;
+  }
+
+  #encryptBtn,
+  #decryptBtn {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      inline-size: auto;
+      padding: 10px;
+    }
+
+    #textInput,
+    #encryptedTextInput {
+      inline-size: 50%;
+    }
+  }
