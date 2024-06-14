@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="./style/index.css">
     <title>Document</title>
   </head>
-  <body>
-    <h1>Вход</h1>
-<form id="loginForm">
-    <input type="text" id="username" placeholder="Логин">
-    <button type="submit">Войти</button>
-</form>
+  <body class="page">
+    <div class="contaner__login">
+      <h1>Вход</h1>
+      <form id="loginForm">
+          <input type="text" id="username" placeholder="Логин">
+          <button type="submit">Войти</button>
+      </form>
+    </div>
 <div class="container" style="display: none;">
   <h1>Шифрование текста</h1>
   <input type="text" id="textInput" placeholder="Введи что зашифровать" />
@@ -24,7 +26,53 @@
   />
   <button id="decryptBtn">Decrypt</button>
   <p id="decryptedTextPara"></p>
+  <div class="user">
+    <div class="user__conatainer">
+      <p class="text">Пользователи с правами на вход</p>
+      <ul class="user__item">
+        <li class="user__list">
+          <a href="https://vk.com/id219126543" class="user__link">
+            <article class="user__card">
+              <h2 class="user__title">Сафин Дмитрий</h2>
+                <img class="user__img" src="./img/Safin.jfif" alt="Пользователь Сафин Дмитрий">
+              <p class="user__decription">Дмитрий, подобен птице Феникс, может символизировать возрождение, возможность преодоления трудностей и перерождения после неудач. Так же как Феникс, человек способен извлечь силу из своих неудач и превратить их в новые возможности и опыт.</p>
+            </article>
+          </a>
+        </li>
+        <li class="user__list">
+          <a href="https://vk.com/psi_link" class="user__link">
+            <article class="user__card">
+              <h2 class="user__title">Ромашов Семён</h2>
+                <img class="user__img" src="./img/Semen.jfif" alt="Пользователь Сафин Дмитрий">
+              <p class="user__decription">Семён, аналогичен пухлому мишке, может обладать некоторыми характеристиками и качествами, свойственными этому милому зверьку. Пухлый мишка, как правило, ассоциируется с мягкостью, добротой и уютом.</p>
+            </article>
+          </a>
+        </li>
+        <li class="user__list">
+          <a href="https://vk.com/l.rusinov96" class="user__link">
+            <article class="user__card">
+              <h2 class="user__title">Русинов Иван</h2>
+                <img class="user__img" src="./img/Ivan.jfif" alt="Пользователь Сафин Дмитрий">
+              <p class="user__decription">
+                Иван, подобен петуху, может обладать качествами и характеристиками, характерными для этой птицы. Петух часто ассоциируется со своей яркой внешностью, самоуверенностью и энергичностью, аналогично человек также может выделяться своей индивидуальностью и уверенностью в себе.</p>
+            </article>
+          </a>
+        </li>
+        <li class="user__list">
+          <a href="https://vk.com/69voodoo69" class="user__link">
+            <article class="user__card">
+              <h2 class="user__title">Каюмов Сулейман</h2>
+                <img class="user__img" src="./img/Suli.jfif" alt="Пользователь Сафин Дмитрий">
+              <p class="user__decription">Татарин - это не просто человек, это настоящий шишкарь! У него в крови течет молоко из бараньего глаза, а вместо сердца бьется сразу три золотых тюбика с "чак-чаком".</p>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
 </div>
+
     <script src="./script/index.js">
     </script>
   </body>

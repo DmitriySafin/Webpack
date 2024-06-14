@@ -1,5 +1,22 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul,li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 body {
     background-color: rgb(246, 211, 152);
+    max-inline-size: 1440px;
+    min-inline-size: 320px;
+    padding: 15px;
+  }
+  .contaner__login{
+    margin-bottom: 20px;
   }
   .container {
     inline-size: 50%;
@@ -15,6 +32,15 @@ body {
     background-color: transparent;
   }
 
+  #textInput{
+    margin-bottom: 15px;
+  }
+.text{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
   #encryptBtn,
   #decryptBtn {
     background-color: transparent;
@@ -22,6 +48,60 @@ body {
     border-radius: 20px;
     cursor: pointer;
   }
+  h1{
+    margin-bottom: 20px;
+  }
+  .user{
+    margin-top: 40px;
+  }
+.user__conatainer{
+  max-inline-size: 1170px;
+  margin: 0 auto;
+}
+  .user__item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  }
+  /* .user__card {
+    inline-size: 100%;
+    border: 2px solid rgb(156, 156, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 30px;
+  } */
+   .user__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(156, 156, 153);
+    border-radius: 30px;
+    gap: 15px;
+    padding: 30px 15px 30px 15px;
+   }
+  .user__picture{
+    text-align: center;
+  }
+  .user__img{
+    object-fit: cover;
+    inline-size: 80%;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .user__title{
+    color: rgb(52, 47, 47);
+    font-size: clamp(0.8125rem, 0.6161rem + 0.9821vw, 1.5rem);
+  }
+  .user__decription{
+    max-inline-size: 450px;
+    font-size: 13px;
+    color: rgb(52, 47, 47);
+  }
+
+
 
   @media screen and (max-width: 600px) {
     .container {
@@ -33,4 +113,11 @@ body {
     #encryptedTextInput {
       inline-size: 50%;
     }
+  }
+
+  @media (width < 800px){
+    .user__item{
+     display: flex;
+     flex-direction: column;
+      }
   }
